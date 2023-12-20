@@ -3,17 +3,28 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Management;
 using System.IO;
+using System.Threading;
 
 namespace w2_volume
 {
     public partial class Main : Form
     {
+        //Unique App Identifier
+        static Mutex mutex = new Mutex(true, "Worms 2 Volume by Carlmundo");
         //File with BGM Volume value
         private string fileVolumeBGM = "volumeBGM.txt";
 
         public Main()
         {
-            InitializeComponent();
+            if (mutex.WaitOne(TimeSpan.Zero, true))
+            {
+                mutex.ReleaseMutex();
+                InitializeComponent();
+            }
+            else
+            {
+                Close();
+            } 
         }
         public static string GetOSVersion()
         {
