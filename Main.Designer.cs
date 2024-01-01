@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.tblDesign = new System.Windows.Forms.TableLayoutPanel();
             this.lblMixer = new System.Windows.Forms.Label();
@@ -37,7 +36,6 @@
             this.tbBGM = new System.Windows.Forms.TrackBar();
             this.lblBGMval = new System.Windows.Forms.Label();
             this.btnMixer = new System.Windows.Forms.Button();
-            this.timerProcessCheck = new System.Windows.Forms.Timer(this.components);
             this.tblDesign.SuspendLayout();
             this.flwBGM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbBGM)).BeginInit();
@@ -135,12 +133,6 @@
             this.btnMixer.UseVisualStyleBackColor = true;
             this.btnMixer.Click += new System.EventHandler(this.btnMixer_Click);
             // 
-            // timerProcessCheck
-            // 
-            this.timerProcessCheck.Enabled = true;
-            this.timerProcessCheck.Interval = 1000;
-            this.timerProcessCheck.Tick += new System.EventHandler(this.timerProcessCheck_Tick);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -177,7 +169,6 @@
         private System.Windows.Forms.FlowLayoutPanel flwBGM;
         private System.Windows.Forms.Label lblMixer;
         private System.Windows.Forms.Button btnMixer;
-        private System.Windows.Forms.Timer timerProcessCheck;
     }
 }
 

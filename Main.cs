@@ -82,18 +82,5 @@ namespace w2_volume
         {
             Process.Start("ms-settings:apps-volume");
         }
-
-        private void timerProcessCheck_Tick(object sender, EventArgs e)
-        {
-            Process[] ProcessW2 = Process.GetProcessesByName("worms2");
-            if (ProcessW2.Length > 0)
-            {
-                tbBGM.Enabled = false;
-            }
-            else
-            {
-                tbBGM.Enabled = true;
-            }
-        }
     }
 }
