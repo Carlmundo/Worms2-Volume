@@ -12,7 +12,7 @@ namespace w2_volume
         //Unique App Identifier
         static Mutex mutex = new Mutex(true, "Worms 2 Volume by Carlmundo");
         //File with BGM Volume value
-        private string fileVolumeBGM = "volumeBGM.txt";
+        private string fileVolumeBGM = "volumeBGM.ini";
 
         public Main()
         {
@@ -40,6 +40,99 @@ namespace w2_volume
 
         private void Main_Load(object sender, EventArgs e)
         {
+            //Check Language
+            string langIni = "language.ini";
+            string[] langArr = {"de","en","es","es-419","fr","it","nl","pl","pt","pt-br","ru","sv"};
+            string langVal;
+            if (File.Exists(langIni)){ 
+                langVal = File.ReadAllText(langIni).Trim();
+                if (!Array.Exists(langArr, element => element == langVal))
+                {
+                    langVal = "en";
+                }
+            }
+            else
+            {
+                langVal = "en";
+            }
+
+            string txtVolume, txtBGM, txtMixer, txtOpenMixer;
+            switch (langVal)
+            {
+                case "de":
+                    txtVolume = "Lautstärke";
+                    txtBGM = "Audio-Hintergrund";
+                    txtMixer = "Ton-Mischpult";
+                    txtOpenMixer = "Einstellungen";
+                break;
+                case "es":
+                    txtVolume = "Volumen";
+                    txtBGM = "Sonido de ambiente";
+                    txtMixer = "Volumen Mezclador Audio";
+                    txtOpenMixer = "Editar";
+                    break;
+                case "es-419":
+                    txtVolume = "Volumen";
+                    txtBGM = "Volumen del sonido ambiental";
+                    txtMixer = "Volumen del mezclador de sonido";
+                    txtOpenMixer = "Editar";
+                    break;
+                case "fr":
+                    txtVolume = "Volume";
+                    txtBGM = "Fond sonore";
+                    txtMixer = "Volume du mélangeur audio";
+                    txtOpenMixer = "Editer";
+                    break;
+                case "it":
+                    txtVolume = "Volume";
+                    txtBGM = "Sottofondo";
+                    txtMixer = "Volume mixer audio";
+                    txtOpenMixer = "Modifica";
+                    break;
+                case "nl":
+                    txtVolume = "Volume";
+                    txtBGM = "Omgeving";
+                    txtMixer = "Audio mixer volume";
+                    txtOpenMixer = "Instellingen wijzigen";
+                    break;
+                case "pl":
+                    txtVolume = "Głośność";
+                    txtBGM = "Muzyka w tle";
+                    txtMixer = "Mikser Głośności";
+                    txtOpenMixer = "Otwórz Mikser Głośności";
+                    break;
+                case "pt":
+                case "pt-br":
+                    txtVolume = "Volume";
+                    txtBGM = "Música de Fundo";
+                    txtMixer = "Misturador de Volume";
+                    txtOpenMixer = "Abrir misturador de volume";
+                    break;
+                case "ru":
+                    txtVolume = "громкость";
+                    txtBGM = "Фоновая музыка";
+                    txtMixer = "Громкость аудио микшера";
+                    txtOpenMixer = "открыта";
+                    break;
+                case "sv":
+                    txtVolume = "Volym";
+                    txtBGM = "Miljö";
+                    txtMixer = "Audio mixer volym";
+                    txtOpenMixer = "Editera";
+                    break;
+                default:
+                    txtVolume = "Volume";
+                    txtBGM = "Background Music";
+                    txtMixer = "Volume Mixer";
+                    txtOpenMixer = "Open Volume Mixer";
+                break;
+            }
+            //Set text of controls
+            this.Text = "Worms 2 " + txtVolume;
+            lblBGM.Text = txtBGM;
+            lblMixer.Text = txtMixer;
+            btnMixer.Text = txtOpenMixer;
+
             //Check if Audio Mixer should be shown
             string versionOS = GetOSVersion();
             string versionMixer = "10.0.18362"; //Windows 10 Build 1903

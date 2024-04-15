@@ -148,7 +148,7 @@
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Worms2 Volume";
+            this.Text = "Worms 2 Volume";
             this.Load += new System.EventHandler(this.Main_Load);
             this.tblDesign.ResumeLayout(false);
             this.tblDesign.PerformLayout();
