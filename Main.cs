@@ -68,7 +68,7 @@ namespace w2_volume
                 case "es":
                     txtVolume = "Volumen";
                     txtBGM = "Sonido de ambiente";
-                    txtMixer = "Volumen Mezclador Audio";
+                    txtMixer = "Mezclador de Audio";
                     txtOpenMixer = "Editar";
                     break;
                 case "es-419":
