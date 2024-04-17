@@ -66,6 +66,7 @@ namespace w2_volume
                     txtOpenMixer = "Einstellungen";
                 break;
                 case "es":
+                    //Credit: Tomasety III
                     txtVolume = "Volumen";
                     txtBGM = "Sonido de ambiente";
                     txtMixer = "Mezclador de Audio";
@@ -96,6 +97,7 @@ namespace w2_volume
                     txtOpenMixer = "Instellingen wijzigen";
                     break;
                 case "pl":
+                    //Credit: Dawid8
                     txtVolume = "Głośność";
                     txtBGM = "Muzyka w tle";
                     txtMixer = "Mikser Głośności";
@@ -103,6 +105,7 @@ namespace w2_volume
                     break;
                 case "pt":
                 case "pt-br":
+                    //Credit: rubinho146
                     txtVolume = "Volume";
                     txtBGM = "Música de Fundo";
                     txtMixer = "Misturador de Volume";
