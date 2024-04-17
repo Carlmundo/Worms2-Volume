@@ -12,7 +12,7 @@ namespace w2_volume
         //Unique App Identifier
         static Mutex mutex = new Mutex(true, "Worms 2 Volume by Carlmundo");
         //File with BGM Volume value
-        private string fileVolumeBGM = "volumeBGM.ini";
+        private string fileVolumeBGM = "volumeBGM.txt";
 
         public Main()
         {
@@ -41,11 +41,11 @@ namespace w2_volume
         private void Main_Load(object sender, EventArgs e)
         {
             //Check Language
-            string langIni = "language.ini";
+            string langFile = "language.txt";
             string[] langArr = {"de","en","es","es-419","fr","it","nl","pl","pt","pt-br","ru","sv"};
             string langVal;
-            if (File.Exists(langIni)){ 
-                langVal = File.ReadAllText(langIni).Trim();
+            if (File.Exists(langFile)){ 
+                langVal = File.ReadAllText(langFile).Trim();
                 if (!Array.Exists(langArr, element => element == langVal))
                 {
                     langVal = "en";
