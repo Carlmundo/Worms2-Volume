@@ -9,22 +9,12 @@ namespace w2_volume
 {
     public partial class Main : Form
     {
-        //Unique App Identifier
-        static Mutex mutex = new Mutex(true, "Worms 2 Volume by Carlmundo");
         //File with BGM Volume value
         private string fileVolumeBGM = "volumeBGM.txt";
 
         public Main()
         {
-            if (mutex.WaitOne(TimeSpan.Zero, true))
-            {
-                mutex.ReleaseMutex();
-                InitializeComponent();
-            }
-            else
-            {
-                Close();
-            } 
+            InitializeComponent();
         }
         public static string GetOSVersion()
         {
