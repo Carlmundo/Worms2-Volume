@@ -53,21 +53,23 @@
             this.tblDesign.Controls.Add(this.btnMixer, 1, 1);
             this.tblDesign.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblDesign.Location = new System.Drawing.Point(0, 0);
+            this.tblDesign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tblDesign.Name = "tblDesign";
-            this.tblDesign.Padding = new System.Windows.Forms.Padding(10);
+            this.tblDesign.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.tblDesign.RowCount = 2;
             this.tblDesign.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tblDesign.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tblDesign.Size = new System.Drawing.Size(469, 118);
+            this.tblDesign.Size = new System.Drawing.Size(435, 138);
             this.tblDesign.TabIndex = 0;
             // 
             // lblMixer
             // 
             this.lblMixer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMixer.AutoSize = true;
-            this.lblMixer.Location = new System.Drawing.Point(34, 79);
+            this.lblMixer.Location = new System.Drawing.Point(44, 119);
+            this.lblMixer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMixer.Name = "lblMixer";
-            this.lblMixer.Size = new System.Drawing.Size(128, 23);
+            this.lblMixer.Size = new System.Drawing.Size(155, 27);
             this.lblMixer.TabIndex = 5;
             this.lblMixer.Text = "Volume Mixer";
             this.lblMixer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -76,9 +78,10 @@
             // 
             this.lblBGM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBGM.AutoSize = true;
-            this.lblBGM.Location = new System.Drawing.Point(13, 28);
+            this.lblBGM.Location = new System.Drawing.Point(16, 47);
+            this.lblBGM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBGM.Name = "lblBGM";
-            this.lblBGM.Size = new System.Drawing.Size(171, 23);
+            this.lblBGM.Size = new System.Drawing.Size(211, 27);
             this.lblBGM.TabIndex = 2;
             this.lblBGM.Text = "Background Music";
             this.lblBGM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -90,9 +93,10 @@
             this.flwBGM.Controls.Add(this.tbBGM);
             this.flwBGM.Controls.Add(this.lblBGMval);
             this.flwBGM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flwBGM.Location = new System.Drawing.Point(190, 13);
+            this.flwBGM.Location = new System.Drawing.Point(235, 16);
+            this.flwBGM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flwBGM.Name = "flwBGM";
-            this.flwBGM.Size = new System.Drawing.Size(266, 54);
+            this.flwBGM.Size = new System.Drawing.Size(267, 89);
             this.flwBGM.TabIndex = 4;
             // 
             // tbBGM
@@ -102,7 +106,7 @@
             this.tbBGM.Margin = new System.Windows.Forms.Padding(2);
             this.tbBGM.Maximum = 100;
             this.tbBGM.Name = "tbBGM";
-            this.tbBGM.Size = new System.Drawing.Size(200, 50);
+            this.tbBGM.Size = new System.Drawing.Size(233, 58);
             this.tbBGM.TabIndex = 0;
             this.tbBGM.TickFrequency = 10;
             this.tbBGM.Value = 100;
@@ -112,10 +116,11 @@
             // 
             this.lblBGMval.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBGMval.AutoSize = true;
-            this.lblBGMval.Location = new System.Drawing.Point(207, 15);
-            this.lblBGMval.MinimumSize = new System.Drawing.Size(50, 0);
+            this.lblBGMval.Location = new System.Drawing.Point(4, 62);
+            this.lblBGMval.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBGMval.MinimumSize = new System.Drawing.Size(58, 0);
             this.lblBGMval.Name = "lblBGMval";
-            this.lblBGMval.Size = new System.Drawing.Size(50, 23);
+            this.lblBGMval.Size = new System.Drawing.Size(58, 27);
             this.lblBGMval.TabIndex = 1;
             this.lblBGMval.Text = "100";
             this.lblBGMval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,10 +129,10 @@
             // 
             this.btnMixer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnMixer.AutoSize = true;
-            this.btnMixer.Location = new System.Drawing.Point(207, 72);
+            this.btnMixer.Location = new System.Drawing.Point(233, 111);
             this.btnMixer.Margin = new System.Windows.Forms.Padding(2);
             this.btnMixer.Name = "btnMixer";
-            this.btnMixer.Size = new System.Drawing.Size(232, 37);
+            this.btnMixer.Size = new System.Drawing.Size(271, 43);
             this.btnMixer.TabIndex = 6;
             this.btnMixer.Text = "Open Volume Mixer";
             this.btnMixer.UseVisualStyleBackColor = true;
@@ -135,16 +140,16 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(469, 118);
+            this.ClientSize = new System.Drawing.Size(435, 138);
             this.Controls.Add(this.tblDesign);
             this.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
