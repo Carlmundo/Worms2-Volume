@@ -24,7 +24,7 @@ namespace w2_volume
                 return;
             }
 
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
         }
