@@ -50,6 +50,7 @@ namespace w2_volume
             switch (langVal)
             {
                 case "cs":
+                    //Credit: JPEXS
                     txtVolume = "Hlasitost";
                     txtBGM = "Hudba v pozadí";
                     txtMixer = "Směšovač hlasitosti";
