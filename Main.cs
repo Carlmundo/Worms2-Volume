@@ -32,7 +32,7 @@ namespace w2_volume
         {
             //Check Language
             string langFile = "language.txt";
-            string[] langArr = {"de","en","es","es-419","fr","it","nl","pl","pt","pt-br","ru","sv"};
+            string[] langArr = {"cs","de","en","es","es-419","fr","it","nl","pl","pt","pt-br","ru","sv"};
             string langVal;
             if (File.Exists(langFile)){ 
                 langVal = File.ReadAllText(langFile).Trim();
@@ -49,6 +49,12 @@ namespace w2_volume
             string txtVolume, txtBGM, txtMixer, txtOpenMixer;
             switch (langVal)
             {
+                case "cs":
+                    txtVolume = "Hlasitost";
+                    txtBGM = "Hudba v pozadí";
+                    txtMixer = "Směšovač hlasitosti";
+                    txtOpenMixer = "Otevřít směšovač hlasitosti";
+                    break;
                 case "de":
                     txtVolume = "Lautstärke";
                     txtBGM = "Audio-Hintergrund";
