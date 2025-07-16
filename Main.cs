@@ -32,7 +32,7 @@ namespace w2_volume
         {
             //Check Language
             string langFile = "language.txt";
-            string[] langArr = {"cs","de","en","es","es-419","fr","it","nl","pl","pt","pt-br","ru","sv"};
+            string[] langArr = {"cs","de","en","es","es-419","fr","it","nl","pl","pt","pt-br","ru","sv","zh-Hans"};
             string langVal;
             if (File.Exists(langFile)){ 
                 langVal = File.ReadAllText(langFile).Trim();
@@ -119,6 +119,12 @@ namespace w2_volume
                     txtBGM = "Miljö";
                     txtMixer = "Audio mixer volym";
                     txtOpenMixer = "Editera";
+                    break;
+                case "zh-Hans": //Credit: 萌の少年@Bilibili
+                    txtVolume = "音量";
+                    txtBGM = "背景音乐";
+                    txtMixer = "音量混音器";
+                    txtOpenMixer = "打开音量混音器";
                     break;
                 default:
                     txtVolume = "Volume";
