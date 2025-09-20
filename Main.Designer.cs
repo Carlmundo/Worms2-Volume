@@ -69,7 +69,7 @@
             this.tblDesign.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tblDesign.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tblDesign.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tblDesign.Size = new System.Drawing.Size(539, 185);
+            this.tblDesign.Size = new System.Drawing.Size(445, 186);
             this.tblDesign.TabIndex = 0;
             // 
             // flwSFX
@@ -82,8 +82,8 @@
             this.flwSFX.Location = new System.Drawing.Point(237, 115);
             this.flwSFX.Margin = new System.Windows.Forms.Padding(4);
             this.flwSFX.Name = "flwSFX";
-            this.flwSFX.Size = new System.Drawing.Size(285, 89);
-            this.flwSFX.TabIndex = 8;
+            this.flwSFX.Size = new System.Drawing.Size(237, 89);
+            this.flwSFX.TabIndex = 3;
             // 
             // tbSFX
             // 
@@ -119,7 +119,7 @@
             this.lblSFX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSFX.Name = "lblSFX";
             this.lblSFX.Size = new System.Drawing.Size(164, 27);
-            this.lblSFX.TabIndex = 7;
+            this.lblSFX.TabIndex = 2;
             this.lblSFX.Text = "Sound Effects";
             this.lblSFX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -131,7 +131,7 @@
             this.lblMixer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMixer.Name = "lblMixer";
             this.lblMixer.Size = new System.Drawing.Size(155, 27);
-            this.lblMixer.TabIndex = 5;
+            this.lblMixer.TabIndex = 4;
             this.lblMixer.Text = "Volume Mixer";
             this.lblMixer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -143,7 +143,7 @@
             this.lblBGM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBGM.Name = "lblBGM";
             this.lblBGM.Size = new System.Drawing.Size(211, 27);
-            this.lblBGM.TabIndex = 2;
+            this.lblBGM.TabIndex = 0;
             this.lblBGM.Text = "Background Music";
             this.lblBGM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -157,8 +157,8 @@
             this.flwBGM.Location = new System.Drawing.Point(237, 17);
             this.flwBGM.Margin = new System.Windows.Forms.Padding(4);
             this.flwBGM.Name = "flwBGM";
-            this.flwBGM.Size = new System.Drawing.Size(285, 89);
-            this.flwBGM.TabIndex = 4;
+            this.flwBGM.Size = new System.Drawing.Size(237, 89);
+            this.flwBGM.TabIndex = 1;
             // 
             // tbBGM
             // 
@@ -190,11 +190,11 @@
             // 
             this.btnMixer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnMixer.AutoSize = true;
-            this.btnMixer.Location = new System.Drawing.Point(263, 211);
+            this.btnMixer.Location = new System.Drawing.Point(239, 211);
             this.btnMixer.Margin = new System.Windows.Forms.Padding(2);
             this.btnMixer.Name = "btnMixer";
             this.btnMixer.Size = new System.Drawing.Size(232, 43);
-            this.btnMixer.TabIndex = 6;
+            this.btnMixer.TabIndex = 5;
             this.btnMixer.Text = "Open Volume Mixer";
             this.btnMixer.UseVisualStyleBackColor = true;
             this.btnMixer.Click += new System.EventHandler(this.btnMixer_Click);
@@ -205,7 +205,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(539, 185);
+            this.ClientSize = new System.Drawing.Size(445, 186);
             this.Controls.Add(this.tblDesign);
             this.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
