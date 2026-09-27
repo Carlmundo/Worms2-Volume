@@ -92,7 +92,7 @@ namespace w2_volume
                     txtMixer = "Volume du mélangeur audio";
                     txtOpenMixer = "Editer";
                     break;
-                case "is":
+                case "is": //Credit: rubinho146 & friends
                     txtVolume = "Hljóðstyrkur";
                     txtBGM = "Bakgrunnstónlist";
                     txtSFX = "Hljóðbrellur";
