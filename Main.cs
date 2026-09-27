@@ -38,7 +38,7 @@ namespace w2_volume
 
             //Check Language
             string langFile = "language.txt";
-            string[] langArr = {"cs","de","en","es","es-419","fr","it","nl","pl","pt","pt-br","ru","sv","zh-Hans"};
+            string[] langArr = {"cs","de","en","es","es-419","fr","is","it","nl","pl","pt","pt-br","ru","sv","zh-Hans"};
             string langVal;
             if (File.Exists(langFile)){ 
                 langVal = File.ReadAllText(langFile).Trim();
@@ -91,6 +91,13 @@ namespace w2_volume
                     txtSFX = "Effets sonores";
                     txtMixer = "Volume du mélangeur audio";
                     txtOpenMixer = "Editer";
+                    break;
+                case "is":
+                    txtVolume = "Hljóðstyrkur";
+                    txtBGM = "Bakgrunnstónlist";
+                    txtSFX = "Hljóðbrellur";
+                    txtMixer = "Hljóðfærsluborð";
+                    txtOpenMixer = "Opna hljóðfærsluborð";
                     break;
                 case "it":
                     txtVolume = "Volume";
